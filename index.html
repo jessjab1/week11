@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body style="background-color:rgb(112, 112, 114)">
+    <div class="center">
+        <h1 class="display-1">Welcome to the game of tic-tac-toe!</h1>
+        <br>
+        <div >
+        <h2 id="turn">Player X Turn!</h2>
+        <br>
+        <p>Select a box</p>
+        <br>
+        <div class="alert alert-success alert-dismissible fade show" role="alert" id="alertX">
+            <strong>Player X won!</strong>
+        </div>  
+        <div class="alert alert-success alert-dismissible fade show" role="alert" id="alertX">
+            <strong>Player O won!</strong>
+        </div> 
+        <div class="alert alert-info alert-dismissible fade show" role="alert" id="alertTie">
+            <strong>It is a Tie!</strong>
+        </div>   
+            <table id="game" class="center">
+                <tr>
+                    <td><button type="button" class="gameBtn" id="b1" onclick="CheckStatus(); B1()">-</button></td>
+                    <td><button type="button" class="gameBtn" id="b2" onclick="B2(); CheckStatus()">-</button></td>
+                    <td><button type="button" class="gameBtn" id="b3" onclick="B3(); CheckStatus()">-</button></td>
+                  </tr>
+                  <tr>
+                    <td><button type="button" class="gameBtn" id="b4" onclick="B4(); CheckStatus()">-</button></td>
+                    <td><button type="button" class="gameBtn" id="b5" onclick="B5(); CheckStatus()">-</button></td>
+                    <td><button type="button" class="gameBtn" id="b6" onclick="B6(); CheckStatus()">-</button></td>
+                  </tr>
+                  <tr>
+                    <td><button type="button" class="gameBtn" id="b7" onclick="B7(); CheckStatus()">-</button></td>
+                    <td><button type="button" class="gameBtn" id="b8" onclick="B8(); CheckStatus()">-</button></td>
+                    <td><button type="button" class="gameBtn" id="b9" onclick="B9(); CheckStatus()">-</button></td>
+                  </tr>
+            </table>
+            <br>
+            <button type="button" class="btn btn-primary btn-lg" id="btnStart" onclick="RestartGame()">Restart Game</button>
+        </div>
+    </div> 
+      
+
+ 
+    
+    <script src="app.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/css/bootstrap.bundle.js"></script>
+</body>
+</html>
