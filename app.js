@@ -56,7 +56,7 @@ function CheckStatus() {
         $('#alertO').show()
     } else if (b7== 'O' && b8 == 'O' && b9 == 'O' ) {
         $('#alertO').show()
-    } else if (b4== 'O' && b5 == 'O' && b7 == 'O' ) {
+    } else if (b3== 'O' && b5 == 'O' && b7 == 'O' ) {
         $('#alertO').show()
 //Tie
     } else if ((b1 == 'X' || b1 == 'O') && (b2 == 'X' || b2 == 'O') && (b3 == 'X' || b3 == 'O') && 
